@@ -1,4 +1,4 @@
-import { personalInfo, aboutData, skillCategories, projectsData, servicesData } from './data.js';
+import { personalInfo, aboutData, skillCategories, certificationsData, projectsData, servicesData } from './data.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderStats();
   renderAbout();
   renderSkills();
+  renderCertifications();
   renderProjects();
   renderServices();
   initContactForm();
@@ -40,10 +41,10 @@ function initTypingEffect() {
   if (!typingEl) return;
 
   const roles = [
-    "Full Stack Software Systems",
-    "AI & Machine Learning Apps",
-    "Scalable Web Architectures",
-    "High-Performance Cloud Solutions"
+    "Computer Science (Data Science)",
+    "Machine Learning & Predictive Models",
+    "Full-Stack Web Architectures",
+    "Data Analytics & Python Engineering"
   ];
 
   let roleIndex = 0;
@@ -218,6 +219,34 @@ function renderCategorySkills(categoryId) {
       `).join('')}
     </div>
   `;
+}
+
+/* --------------------------------------------------------------------------
+   RENDER CERTIFICATIONS
+   -------------------------------------------------------------------------- */
+function renderCertifications() {
+  const container = document.getElementById('certifications-grid');
+  if (!container) return;
+
+  container.innerHTML = certificationsData.map(cert => `
+    <div class="cert-card">
+      <div>
+        <div class="cert-header">
+          <div class="cert-icon-wrap">
+            ${getSvgIcon('award')}
+          </div>
+          <div>
+            <h3 class="cert-title">${cert.title}</h3>
+            <span class="cert-issuer-badge">${cert.issuer} &bull; ${cert.date}</span>
+          </div>
+        </div>
+        <p class="cert-desc">${cert.description}</p>
+      </div>
+      <div class="cert-skills-list">
+        ${cert.skills.map(s => `<span class="cert-tag">${s}</span>`).join('')}
+      </div>
+    </div>
+  `).join('');
 }
 
 /* --------------------------------------------------------------------------
@@ -423,6 +452,9 @@ function showToast(message) {
    -------------------------------------------------------------------------- */
 function getSvgIcon(name) {
   const icons = {
+    'award': '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>',
+    'chart': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>',
+    'calculator': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M8 18h.01M12 18h.01"/></svg>',
     'code-2': '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>',
     'cpu': '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="15" x2="23" y2="15"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="15" x2="4" y2="15"></line></svg>',
     'zap': '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>',
@@ -442,7 +474,7 @@ function getSvgIcon(name) {
     'brain': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04z"/></svg>',
     'bot': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/></svg>',
     'table': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>',
-    'git': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 15V9a6 6 0 0 0-6-6H6"/><path d="M6 9v6"/></svg>',
+    'git': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M6 9v6"/></svg>',
     'workflow': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><path d="M10 6.5h4M17.5 10v4"/></svg>',
     'box': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>',
     'shield': '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',

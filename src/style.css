@@ -611,7 +611,7 @@ ul {
 
 .stat-value {
   font-family: 'Outfit', sans-serif;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 800;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
@@ -833,6 +833,87 @@ ul {
 }
 
 /* --------------------------------------------------------------------------
+   CERTIFICATIONS SECTION
+   -------------------------------------------------------------------------- */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.cert-card {
+  background: var(--bg-card);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--border-radius-lg);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--glass-border-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.cert-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.cert-icon-wrap {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--border-radius-sm);
+  background: var(--gradient-card);
+  border: 1px solid var(--glass-border-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-cyan);
+  flex-shrink: 0;
+}
+
+.cert-title {
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+.cert-issuer-badge {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  font-weight: 500;
+}
+
+.cert-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.cert-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cert-tag {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--bg-secondary);
+  color: var(--accent-purple);
+  border: 1px solid var(--glass-border);
+}
+
+/* --------------------------------------------------------------------------
    PROJECTS SECTION
    -------------------------------------------------------------------------- */
 .project-filters {
@@ -997,7 +1078,7 @@ ul {
    -------------------------------------------------------------------------- */
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 
@@ -1369,7 +1450,7 @@ ul {
     justify-content: center;
   }
 
-  .projects-grid, .services-grid {
+  .projects-grid, .services-grid, .certifications-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1418,7 +1499,7 @@ ul {
     gap: 30px;
   }
 
-  .skills-grid, .projects-grid, .services-grid {
+  .skills-grid, .projects-grid, .services-grid, .certifications-grid {
     grid-template-columns: 1fr;
   }
 
