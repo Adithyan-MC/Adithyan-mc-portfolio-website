@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adithyan MC | Full Stack Engineer & AI Specialist</title>
+  <meta name="description" content="Portfolio website of Adithyan MC - Full Stack Engineer & AI Specialist. Explore projects, skills, services, and get in touch." />
+  <meta name="keywords" content="Adithyan MC, Portfolio, Full Stack Engineer, Web Developer, AI Specialist, Machine Learning, React, Python, Node.js" />
+  <meta name="author" content="Adithyan MC" />
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Adithyan MC | Full Stack Engineer & AI Specialist" />
+  <meta property="og:description" content="Explore Adithyan MC's portfolio of web development projects, AI solutions, and engineering services." />
+  <meta property="og:url" content="https://www.linkedin.com/in/adithyan-mc-18761a290" />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="nav-logo">
+        <span class="logo-code">&lt;</span><span class="logo-name">Adithyan</span><span class="logo-accent">.MC</span><span class="logo-code"> /&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Theme">
+          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="badge-status">
+          <span class="pulse-dot"></span>
+          <span>Available for New Projects</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Hello, I'm <span class="gradient-text">Adithyan MC</span>
+        </h1>
+        
+        <h2 class="hero-subtitle">
+          I build <span class="typing-text" id="typing-text"></span><span class="typing-cursor">|</span>
+        </h2>
+        
+        <p class="hero-description">
+          Full Stack Software Engineer & AI Practitioner crafting resilient web systems, intelligent AI applications, and user experiences engineered for scale.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore My Work</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </a>
+          
+          <button class="btn btn-outline" id="copy-email-hero-btn" data-email="adithyanmc78@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            <span>Copy Email</span>
+          </button>
+        </div>
+
+        <div class="hero-socials">
+          <span class="social-label">Connect with me:</span>
+          <a href="https://www.linkedin.com/in/adithyan-mc-18761a290" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" id="hero-linkedin-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+          </a>
+          <a href="mailto:adithyanmc78@gmail.com" class="social-link" title="Send Email" id="hero-email-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-card-glow">
+          <div class="tech-sphere">
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+            <div class="core-badge">
+              <span class="badge-tag">&lt;/&gt;</span>
+              <span class="badge-title">Adithyan MC</span>
+              <span class="badge-sub">Full Stack & AI</span>
+            </div>
+            
+            <div class="floating-tech tech-react">React</div>
+            <div class="floating-tech tech-node">Node.js</div>
+            <div class="floating-tech tech-python">Python</div>
+            <div class="floating-tech tech-ai">AI/ML</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="stats-bar">
+      <div class="container stats-container" id="stats-container">
+        <!-- Rendered by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="about-section section-padding" id="about">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">WHO I AM</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Dedicated to creating elegant solutions through code, creativity, and AI innovations.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-bio-card">
+          <h3 class="bio-heading">Building digital experiences that matter</h3>
+          <div class="bio-text" id="about-bio">
+            <!-- Rendered by main.js -->
+          </div>
+
+          <div class="quick-details-grid">
+            <div class="detail-item">
+              <span class="detail-label">Name:</span>
+              <span class="detail-val">Adithyan MC</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Email:</span>
+              <a href="mailto:adithyanmc78@gmail.com" class="detail-val link">adithyanmc78@gmail.com</a>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">LinkedIn:</span>
+              <a href="https://www.linkedin.com/in/adithyan-mc-18761a290" target="_blank" rel="noopener noreferrer" class="detail-val link">adithyan-mc-18761a290</a>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Availability:</span>
+              <span class="detail-val highlight">Open for Opportunities</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-pillars-grid" id="about-pillars">
+          <!-- Rendered by main.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Expertise Section -->
+  <section class="skills-section section-padding" id="skills">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">MY TECH STACK</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Expertise</span></h2>
+        <p class="section-subtitle">A comprehensive view of my technical skills, frameworks, and engineering domain expertise.</p>
+      </div>
+
+      <!-- Skills Tab Switcher -->
+      <div class="skills-tabs" id="skills-tabs">
+        <!-- Rendered by main.js -->
+      </div>
+
+      <!-- Skills Grid Container -->
+      <div class="skills-content-container" id="skills-container">
+        <!-- Rendered by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section class="projects-section section-padding" id="projects">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">FEATURED WORK</span>
+        <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">A showcase of full-stack web applications, AI tools, and software solutions built for real impact.</p>
+      </div>
+
+      <!-- Category Filter -->
+      <div class="project-filters" id="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="aiml">AI & ML</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Rendered by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-section section-padding" id="services">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">WHAT I OFFER</span>
+        <h2 class="section-title">Services & <span class="gradient-text">Solutions</span></h2>
+        <p class="section-subtitle">Tailored technical services to help elevate your digital presence and build intelligent systems.</p>
+      </div>
+
+      <div class="services-grid" id="services-grid">
+        <!-- Rendered by main.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact-section section-padding" id="contact">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Have a project in mind or want to collaborate? Feel free to reach out directly.</p>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info Cards -->
+        <div class="contact-info-cards">
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <div class="contact-details">
+              <h4>Direct Email</h4>
+              <p>adithyanmc78@gmail.com</p>
+              <button class="link-btn" id="copy-email-btn">Copy Email Address</button>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+            <div class="contact-details">
+              <h4>LinkedIn Profile</h4>
+              <p>Adithyan MC</p>
+              <a href="https://www.linkedin.com/in/adithyan-mc-18761a290" target="_blank" rel="noopener noreferrer" class="link-btn" id="contact-linkedin-btn">View LinkedIn Profile &rarr;</a>
+            </div>
+          </div>
+
+          <div class="contact-info-card status-card">
+            <div class="status-indicator">
+              <span class="status-pulse"></span>
+              <span>Available for Hire</span>
+            </div>
+            <p>I am currently accepting new freelance projects, full-time engineering roles, and AI research collaborations.</p>
+          </div>
+        </div>
+
+        <!-- Interactive Contact Form -->
+        <div class="contact-form-container">
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" name="name" placeholder="John Doe" required />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" name="subject" placeholder="Project Inquiry / Collaboration" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+              <span>Send Message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Detail Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close Modal">&times;</button>
+      <div id="modal-body">
+        <!-- Rendered dynamically by main.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-code">&lt;</span><span class="logo-name">Adithyan</span><span class="logo-accent">.MC</span><span class="logo-code"> /&gt;</span>
+        </a>
+        <p>Full Stack Engineer & AI Specialist creating scalable, human-centered digital solutions.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/in/adithyan-mc-18761a290" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <a href="mailto:adithyanmc78@gmail.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-container">
+        <p>&copy; <span id="year">2026</span> Adithyan MC. All rights reserved.</p>
+        <a href="#hero" class="back-to-top" id="back-to-top" aria-label="Back to top">&uarr; Back to top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
