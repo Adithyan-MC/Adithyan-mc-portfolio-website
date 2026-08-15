@@ -373,7 +373,7 @@ ul {
 }
 
 /* --------------------------------------------------------------------------
-   HERO SECTION & CONSTELLATION CANVAS
+   HERO SECTION & PROFILE AVATAR
    -------------------------------------------------------------------------- */
 .hero-section {
   position: relative;
@@ -533,7 +533,7 @@ ul {
   box-shadow: 0 6px 20px rgba(56, 189, 248, 0.3);
 }
 
-/* Hero Visual & Tech Sphere */
+/* Hero Visual & Profile Avatar */
 .hero-visual {
   display: flex;
   justify-content: center;
@@ -567,8 +567,8 @@ ul {
 }
 
 .ring-1 {
-  width: 320px;
-  height: 320px;
+  width: 330px;
+  height: 330px;
 }
 
 .ring-2 {
@@ -584,19 +584,40 @@ ul {
 }
 
 .core-badge {
-  width: 220px;
-  height: 220px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
   background: var(--glass-bg);
-  border: 1px solid var(--glass-border-hover);
+  border: 2px solid var(--accent-cyan);
   backdrop-filter: blur(18px);
-  box-shadow: var(--shadow-glow);
+  box-shadow: 0 0 30px rgba(56, 189, 248, 0.4);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   z-index: 2;
   text-align: center;
+  padding: 12px;
+  overflow: hidden;
+  position: relative;
+}
+
+.profile-avatar-badge {
+  gap: 6px;
+}
+
+.hero-profile-img {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--accent-cyan);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  transition: transform 0.4s ease;
+}
+
+.hero-profile-img:hover {
+  transform: scale(1.08);
 }
 
 .pulse-badge {
@@ -604,26 +625,20 @@ ul {
 }
 
 @keyframes pulseScale {
-  0% { transform: scale(0.98); box-shadow: 0 0 20px rgba(56, 189, 248, 0.25); }
-  100% { transform: scale(1.03); box-shadow: 0 0 35px rgba(99, 102, 241, 0.45); }
-}
-
-.badge-tag {
-  font-family: 'Fira Code', monospace;
-  color: var(--accent-cyan);
-  font-size: 1.5rem;
-  font-weight: 700;
+  0% { transform: scale(0.98); box-shadow: 0 0 20px rgba(56, 189, 248, 0.3); }
+  100% { transform: scale(1.03); box-shadow: 0 0 35px rgba(99, 102, 241, 0.5); }
 }
 
 .badge-title {
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   font-weight: 700;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .badge-sub {
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
 }
 
 .floating-tech {
@@ -697,12 +712,78 @@ ul {
 }
 
 /* --------------------------------------------------------------------------
-   ABOUT SECTION
+   ABOUT SECTION & PORTRAIT
    -------------------------------------------------------------------------- */
 .about-grid {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 0.85fr 1.15fr;
   gap: 40px;
+  margin-bottom: 40px;
+}
+
+.about-portrait-card {
+  text-align: center;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.portrait-wrapper {
+  position: relative;
+  width: 220px;
+  height: 260px;
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  border: 2px solid var(--accent-cyan);
+  box-shadow: 0 0 25px rgba(56, 189, 248, 0.35);
+}
+
+.about-portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.portrait-wrapper:hover .about-portrait-img {
+  transform: scale(1.06);
+}
+
+.portrait-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 4px;
+}
+
+.portrait-info p {
+  font-size: 0.9rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.portrait-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.portrait-tags span {
+  font-family: 'Fira Code', monospace;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: var(--border-radius-full);
+  background: rgba(56, 189, 248, 0.1);
+  color: var(--accent-cyan);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.pillars-section-title {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  text-align: center;
 }
 
 .glass-hover-card {
@@ -771,7 +852,7 @@ ul {
 
 .about-pillars-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
@@ -1530,12 +1611,16 @@ ul {
     justify-content: center;
   }
 
-  .projects-grid, .services-grid, .certifications-grid {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-pillars-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .about-grid {
-    grid-template-columns: 1fr;
+  .projects-grid, .services-grid, .certifications-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .contact-wrapper {
@@ -1579,15 +1664,11 @@ ul {
     gap: 30px;
   }
 
-  .skills-grid, .projects-grid, .services-grid, .certifications-grid {
+  .skills-grid, .projects-grid, .services-grid, .certifications-grid, .about-pillars-grid {
     grid-template-columns: 1fr;
   }
 
   .form-row {
-    grid-template-columns: 1fr;
-  }
-
-  .about-pillars-grid {
     grid-template-columns: 1fr;
   }
 }
