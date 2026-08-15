@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initTypingEffect();
   initNavbar();
+  initConstellationCanvas();
   renderStats();
   renderAbout();
   renderSkills();
@@ -41,10 +42,10 @@ function initTypingEffect() {
   if (!typingEl) return;
 
   const roles = [
-    "Computer Science (Data Science)",
-    "Machine Learning & Predictive Models",
-    "Full-Stack Web Architectures",
-    "Data Analytics & Python Engineering"
+    "B.Tech Computer Science (Data Science)",
+    "Power BI & Data Analytics Dashboards",
+    "Machine Learning & AI Models",
+    "Python Coding & Data Structures"
   ];
 
   let roleIndex = 0;
@@ -58,26 +59,99 @@ function initTypingEffect() {
     if (isDeleting) {
       typingEl.textContent = currentRole.substring(0, charIndex - 1);
       charIndex--;
-      typingSpeed = 50;
+      typingSpeed = 45;
     } else {
       typingEl.textContent = currentRole.substring(0, charIndex + 1);
       charIndex++;
-      typingSpeed = 100;
+      typingSpeed = 90;
     }
 
     if (!isDeleting && charIndex === currentRole.length) {
       isDeleting = true;
-      typingSpeed = 2000; // Pause at end
+      typingSpeed = 2200; // Pause at end
     } else if (isDeleting && charIndex === 0) {
       isDeleting = false;
       roleIndex = (roleIndex + 1) % roles.length;
-      typingSpeed = 500;
+      typingSpeed = 400;
     }
 
     setTimeout(type, typingSpeed);
   }
 
   type();
+}
+
+/* --------------------------------------------------------------------------
+   ANIMATED CONSTELLATION CANVAS
+   -------------------------------------------------------------------------- */
+function initConstellationCanvas() {
+  const canvas = document.getElementById('hero-canvas');
+  if (!canvas) return;
+
+  const ctx = canvas.getContext('2d');
+  let width = canvas.width = canvas.parentElement.offsetWidth;
+  let height = canvas.height = canvas.parentElement.offsetHeight;
+
+  window.addEventListener('resize', () => {
+    width = canvas.width = canvas.parentElement.offsetWidth;
+    height = canvas.height = canvas.parentElement.offsetHeight;
+  });
+
+  const particles = [];
+  const particleCount = Math.min(Math.floor(width / 22), 50);
+
+  for (let i = 0; i < particleCount; i++) {
+    particles.push({
+      x: Math.random() * width,
+      y: Math.random() * height,
+      vx: (Math.random() - 0.5) * 0.8,
+      vy: (Math.random() - 0.5) * 0.8,
+      radius: Math.random() * 2 + 1
+    });
+  }
+
+  function animate() {
+    ctx.clearRect(0, 0, width, height);
+
+    const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    const particleColor = isDark ? 'rgba(56, 189, 248, 0.6)' : 'rgba(2, 132, 199, 0.6)';
+    const lineColor = isDark ? 'rgba(99, 102, 241, ' : 'rgba(79, 70, 229, ';
+
+    for (let i = 0; i < particles.length; i++) {
+      const p = particles[i];
+      p.x += p.vx;
+      p.y += p.vy;
+
+      if (p.x < 0 || p.x > width) p.vx *= -1;
+      if (p.y < 0 || p.y > height) p.vy *= -1;
+
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fillStyle = particleColor;
+      ctx.fill();
+
+      for (let j = i + 1; j < particles.length; j++) {
+        const p2 = particles[j];
+        const dx = p.x - p2.x;
+        const dy = p.y - p2.y;
+        const dist = Math.sqrt(dx * dx + dy * dy);
+
+        if (dist < 130) {
+          const alpha = (1 - dist / 130) * 0.25;
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(p2.x, p2.y);
+          ctx.strokeStyle = `${lineColor}${alpha})`;
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+      }
+    }
+
+    requestAnimationFrame(animate);
+  }
+
+  animate();
 }
 
 /* --------------------------------------------------------------------------
@@ -222,7 +296,7 @@ function renderCategorySkills(categoryId) {
 }
 
 /* --------------------------------------------------------------------------
-   RENDER CERTIFICATIONS
+   RENDER CERTIFICATIONS & WORKSHOPS
    -------------------------------------------------------------------------- */
 function renderCertifications() {
   const container = document.getElementById('certifications-grid');
@@ -242,8 +316,15 @@ function renderCertifications() {
         </div>
         <p class="cert-desc">${cert.description}</p>
       </div>
-      <div class="cert-skills-list">
-        ${cert.skills.map(s => `<span class="cert-tag">${s}</span>`).join('')}
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+        <div class="cert-skills-list">
+          ${cert.skills.map(s => `<span class="cert-tag">${s}</span>`).join('')}
+        </div>
+        ${cert.link ? `
+          <a href="${cert.link}" target="_blank" rel="noopener noreferrer" class="details-btn" style="font-size: 0.85rem;" title="View LinkedIn Certification Post">
+            <span>Verify Post</span> &rarr;
+          </a>
+        ` : ''}
       </div>
     </div>
   `).join('');
@@ -282,11 +363,11 @@ function renderProjects() {
               <span>View Details</span> &rarr;
             </button>
             <div class="link-icons">
+              <a href="${project.previewUrl}" target="_blank" rel="noopener noreferrer" class="icon-btn" title="View LinkedIn Post / Project">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+              </a>
               <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="icon-btn" title="GitHub Code">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-              </a>
-              <a href="${project.previewUrl}" target="_blank" rel="noopener noreferrer" class="icon-btn" title="Live Preview">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
               </a>
             </div>
           </div>
@@ -372,7 +453,7 @@ function openProjectModal(id) {
       ${project.detailedDescription}
     </p>
 
-    <h4 style="margin-bottom: 12px;">Key Highlights & Architecture:</h4>
+    <h4 style="margin-bottom: 12px;">Key Highlights & Features:</h4>
     <ul style="margin-bottom: 24px; display: flex; flex-direction: column; gap: 8px;">
       ${project.features.map(f => `<li style="font-size: 0.95rem; color: var(--text-primary);">&bull; ${f}</li>`).join('')}
     </ul>
@@ -383,8 +464,8 @@ function openProjectModal(id) {
     </div>
 
     <div style="display: flex; gap: 16px; flex-wrap: wrap;">
-      <a href="${project.previewUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">Live Demo</a>
-      <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">View Source Code</a>
+      <a href="${project.previewUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm glowing-btn">View LinkedIn Post / Details</a>
+      <a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">GitHub Repository</a>
     </div>
   `;
 

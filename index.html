@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adithyan MC | Computer Science (Data Science) & Full Stack Engineer</title>
-  <meta name="description" content="Portfolio website of Adithyan MC - Computer Science Engineering (Data Science) & Full Stack Engineer. Explore projects, skills, certifications, services, and contact info." />
-  <meta name="keywords" content="Adithyan MC, Computer Science, Data Science, Portfolio, Full Stack Engineer, Machine Learning, Python, React, Data Analytics" />
+  <title>Adithyan MC | B.Tech Computer Science (Data Science) Student</title>
+  <meta name="description" content="Portfolio website of Adithyan MC - B.Tech Computer Science Engineering (Data Science) Student. Explore Data Science projects, Power BI dashboards, Machine Learning models, and certifications." />
+  <meta name="keywords" content="Adithyan MC, BTech Computer Science, Data Science Student, Power BI, Machine Learning, Python, Data Analytics, St Thomas College" />
   <meta name="author" content="Adithyan MC" />
   
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Adithyan MC | Computer Science (Data Science) & Full Stack Engineer" />
-  <meta property="og:description" content="Explore Adithyan MC's portfolio of Data Science research, web development projects, AI solutions, and engineering certifications." />
+  <meta property="og:title" content="Adithyan MC | B.Tech Computer Science (Data Science) Student" />
+  <meta property="og:description" content="Explore Adithyan MC's portfolio of Data Science research, Power BI dashboards, Python coding workshops, and ML projects." />
   <meta property="og:url" content="https://www.linkedin.com/in/adithyan-mc-18761a290" />
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="./src/style.css" />
 </head>
@@ -45,7 +45,7 @@
           <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
         </button>
 
-        <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+        <a href="#contact" class="btn btn-primary btn-sm glowing-btn">Get In Touch</a>
 
         <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Menu">
           <span></span>
@@ -58,33 +58,34 @@
 
   <!-- Hero Section -->
   <section class="hero-section" id="hero">
+    <canvas id="hero-canvas" class="hero-canvas"></canvas>
     <div class="hero-bg-glow"></div>
     <div class="container hero-container">
       <div class="hero-content">
-        <div class="badge-status">
+        <div class="badge-status glowing-badge">
           <span class="pulse-dot"></span>
-          <span>Computer Science & Data Science</span>
+          <span>B.Tech CSE (Data Science) Student</span>
         </div>
         
         <h1 class="hero-title">
-          Hello, I'm <span class="gradient-text">Adithyan MC</span>
+          Hi, I'm <span class="gradient-text animated-gradient">Adithyan MC</span>
         </h1>
         
         <h2 class="hero-subtitle">
-          I specialize in <span class="typing-text" id="typing-text"></span><span class="typing-cursor">|</span>
+          Specializing in <span class="typing-text" id="typing-text"></span><span class="typing-cursor">|</span>
         </h2>
         
         <p class="hero-description">
-          Computer Science Engineer specializing in Data Science, Machine Learning, and Full Stack Web Architecture. Transforming raw data into intelligent software applications.
+          B.Tech Computer Science Engineering student focused on Data Science, Machine Learning, Power BI business analytics, and Python AI algorithms.
         </p>
 
         <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">
-            <span>Explore Work</span>
+          <a href="#projects" class="btn btn-primary glowing-btn">
+            <span>Explore Work & Projects</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </a>
           
-          <button class="btn btn-outline" id="copy-email-hero-btn" data-email="adithyanmc78@gmail.com">
+          <button class="btn btn-outline float-btn" id="copy-email-hero-btn" data-email="adithyanmc78@gmail.com">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
             <span>Copy Email</span>
           </button>
@@ -92,36 +93,36 @@
 
         <div class="hero-socials">
           <span class="social-label">Connect with me:</span>
-          <a href="https://www.linkedin.com/in/adithyan-mc-18761a290" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn Profile" id="hero-linkedin-link">
+          <a href="https://www.linkedin.com/in/adithyan-mc-18761a290" target="_blank" rel="noopener noreferrer" class="social-link glow-social" title="LinkedIn Profile" id="hero-linkedin-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
           </a>
-          <a href="https://github.com/Adithyan-MC" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub Profile" id="hero-github-link">
+          <a href="https://github.com/Adithyan-MC" target="_blank" rel="noopener noreferrer" class="social-link glow-social" title="GitHub Profile" id="hero-github-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
           </a>
-          <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=mksizj1" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram Profile" id="hero-instagram-link">
+          <a href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=mksizj1" target="_blank" rel="noopener noreferrer" class="social-link glow-social" title="Instagram Profile" id="hero-instagram-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
           </a>
-          <a href="mailto:adithyanmc78@gmail.com" class="social-link" title="Send Email" id="hero-email-link">
+          <a href="mailto:adithyanmc78@gmail.com" class="social-link glow-social" title="Send Email" id="hero-email-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
           </a>
         </div>
       </div>
 
       <div class="hero-visual">
-        <div class="hero-card-glow">
+        <div class="hero-card-glow animated-card-glow">
           <div class="tech-sphere">
             <div class="orbit-ring ring-1"></div>
             <div class="orbit-ring ring-2"></div>
-            <div class="core-badge">
+            <div class="core-badge pulse-badge">
               <span class="badge-tag">&lt;/&gt;</span>
               <span class="badge-title">Adithyan MC</span>
-              <span class="badge-sub">CSE (Data Science)</span>
+              <span class="badge-sub">B.Tech CSE (DS)</span>
             </div>
             
-            <div class="floating-tech tech-react">Data Science</div>
-            <div class="floating-tech tech-node">Python</div>
-            <div class="floating-tech tech-python">React</div>
-            <div class="floating-tech tech-ai">Machine Learning</div>
+            <div class="floating-tech tech-react glow-badge">Data Science</div>
+            <div class="floating-tech tech-node glow-badge">Power BI</div>
+            <div class="floating-tech tech-python glow-badge">Python</div>
+            <div class="floating-tech tech-ai glow-badge">Machine Learning</div>
           </div>
         </div>
       </div>
@@ -139,22 +140,22 @@
   <section class="about-section section-padding" id="about">
     <div class="container">
       <div class="section-header center">
-        <span class="section-tag">WHO I AM</span>
+        <span class="section-tag">MY BACKGROUND</span>
         <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-        <p class="section-subtitle">Computer Science Engineer specializing in Data Science, Machine Learning, and Web Architecture.</p>
+        <p class="section-subtitle">B.Tech Computer Science Engineering Student specializing in Data Science & Machine Learning.</p>
       </div>
 
       <div class="about-grid">
-        <div class="about-bio-card">
-          <h3 class="bio-heading">Data Science & Software Engineering</h3>
+        <div class="about-bio-card glass-hover-card">
+          <h3 class="bio-heading">B.Tech Computer Science (Data Science) Student</h3>
           <div class="bio-text" id="about-bio">
             <!-- Rendered by main.js -->
           </div>
 
           <div class="quick-details-grid">
             <div class="detail-item">
-              <span class="detail-label">Degree / Branch:</span>
-              <span class="detail-val highlight">B.Tech CSE (Data Science)</span>
+              <span class="detail-label">Status:</span>
+              <span class="detail-val highlight">B.Tech CSE (Data Science) Student</span>
             </div>
             <div class="detail-item">
               <span class="detail-label">Email:</span>
@@ -182,9 +183,9 @@
   <section class="skills-section section-padding" id="skills">
     <div class="container">
       <div class="section-header center">
-        <span class="section-tag">SKILLS & CERTIFICATE ANALYSIS</span>
+        <span class="section-tag">TECHNICAL SKILLS & WORKSHOPS</span>
         <h2 class="section-title">Skills & <span class="gradient-text">Expertise</span></h2>
-        <p class="section-subtitle">Comprehensive skill analysis backed by verified certificates in Data Science, ML, and Full-Stack Engineering.</p>
+        <p class="section-subtitle">Verified skill proficiency gained through academic coursework, Python workshops, and Power BI intensives.</p>
       </div>
 
       <!-- Skills Tab Switcher -->
@@ -203,9 +204,9 @@
   <section class="certifications-section section-padding" id="certifications">
     <div class="container">
       <div class="section-header center">
-        <span class="section-tag">VERIFIED CREDENTIALS</span>
-        <h2 class="section-title">Certifications & <span class="gradient-text">Achievements</span></h2>
-        <p class="section-subtitle">Verified skill certificates and academic accomplishments in Data Science & Software Engineering.</p>
+        <span class="section-tag">VERIFIED WORKSHOPS & CERTIFICATES</span>
+        <h2 class="section-title">Certifications & <span class="gradient-text">Workshops</span></h2>
+        <p class="section-subtitle">Verified credentials from technical workshops in Power BI, Python coding, and Artificial Intelligence.</p>
       </div>
 
       <div class="certifications-grid" id="certifications-grid">
@@ -218,17 +219,18 @@
   <section class="projects-section section-padding" id="projects">
     <div class="container">
       <div class="section-header center">
-        <span class="section-tag">FEATURED WORK</span>
-        <h2 class="section-title">Recent <span class="gradient-text">Projects</span></h2>
-        <p class="section-subtitle">A showcase of Data Science tools, AI models, and full-stack web software built for real impact.</p>
+        <span class="section-tag">ACADEMIC & DATA PROJECTS</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Academic projects, Power BI analytics dashboards, and Machine Learning pipelines.</p>
       </div>
 
       <!-- Category Filter -->
       <div class="project-filters" id="project-filters">
         <button class="filter-btn active" data-filter="all">All Projects</button>
-        <button class="filter-btn" data-filter="aiml">Data Science & AI</button>
-        <button class="filter-btn" data-filter="web">Web Apps</button>
-        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="datascience">Power BI & Analytics</button>
+        <button class="filter-btn" data-filter="academic">Academic Systems</button>
+        <button class="filter-btn" data-filter="aiml">AI & ML</button>
+        <button class="filter-btn" data-filter="programming">Python</button>
       </div>
 
       <!-- Projects Grid -->
@@ -242,9 +244,9 @@
   <section class="services-section section-padding" id="services">
     <div class="container">
       <div class="section-header center">
-        <span class="section-tag">WHAT I OFFER</span>
-        <h2 class="section-title">Services & <span class="gradient-text">Solutions</span></h2>
-        <p class="section-subtitle">Data Science analysis, machine learning modeling, and modern web application development.</p>
+        <span class="section-tag">WHAT I DO</span>
+        <h2 class="section-title">Domains & <span class="gradient-text">Capabilities</span></h2>
+        <p class="section-subtitle">Specialized competencies in Data Science, Power BI dashboard design, and AI model building.</p>
       </div>
 
       <div class="services-grid" id="services-grid">
@@ -259,13 +261,13 @@
       <div class="section-header center">
         <span class="section-tag">GET IN TOUCH</span>
         <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
-        <p class="section-subtitle">Reach out for Data Science projects, full-stack software development, or engineering roles.</p>
+        <p class="section-subtitle">Open for Data Science internships, academic collaborations, and analytics projects.</p>
       </div>
 
       <div class="contact-wrapper">
         <!-- Contact Info Cards -->
         <div class="contact-info-cards">
-          <div class="contact-info-card">
+          <div class="contact-info-card glass-hover-card">
             <div class="contact-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
             </div>
@@ -276,7 +278,7 @@
             </div>
           </div>
 
-          <div class="contact-info-card">
+          <div class="contact-info-card glass-hover-card">
             <div class="contact-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
             </div>
@@ -287,7 +289,7 @@
             </div>
           </div>
 
-          <div class="contact-info-card">
+          <div class="contact-info-card glass-hover-card">
             <div class="contact-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             </div>
@@ -298,7 +300,7 @@
             </div>
           </div>
 
-          <div class="contact-info-card">
+          <div class="contact-info-card glass-hover-card">
             <div class="contact-icon">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </div>
@@ -312,14 +314,14 @@
           <div class="contact-info-card status-card">
             <div class="status-indicator">
               <span class="status-pulse"></span>
-              <span>Available for Work & Collaborations</span>
+              <span>Open to Internships & Projects</span>
             </div>
-            <p>I am currently accepting new Data Science projects, machine learning engineering roles, and full-stack software positions.</p>
+            <p>I am a B.Tech Computer Science (Data Science) student eager to apply Machine Learning, Power BI analytics, and Python skills to real-world projects.</p>
           </div>
         </div>
 
         <!-- Interactive Contact Form -->
-        <div class="contact-form-container">
+        <div class="contact-form-container glass-hover-card">
           <form class="contact-form" id="contact-form">
             <div class="form-row">
               <div class="form-group">
@@ -334,7 +336,7 @@
 
             <div class="form-group">
               <label for="contact-subject">Subject</label>
-              <input type="text" id="contact-subject" name="subject" placeholder="Data Science Project Inquiry / Collaboration" required />
+              <input type="text" id="contact-subject" name="subject" placeholder="Data Science / Internship Inquiry" required />
             </div>
 
             <div class="form-group">
@@ -342,7 +344,7 @@
               <textarea id="contact-message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+            <button type="submit" class="btn btn-primary btn-block glowing-btn" id="form-submit-btn">
               <span>Send Message</span>
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
             </button>
@@ -372,7 +374,7 @@
         <a href="#hero" class="nav-logo">
           <span class="logo-code">&lt;</span><span class="logo-name">Adithyan</span><span class="logo-accent">.MC</span><span class="logo-code"> /&gt;</span>
         </a>
-        <p>Computer Science Engineer specializing in Data Science, Machine Learning, and Web Systems.</p>
+        <p>B.Tech Computer Science Engineering Student specializing in Data Science, Machine Learning & Power BI Analytics.</p>
       </div>
 
       <div class="footer-links">

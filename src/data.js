@@ -1,48 +1,48 @@
 export const personalInfo = {
   name: "Adithyan MC",
-  title: "Computer Science & Data Science Specialist",
-  tagline: "Building intelligent data-driven applications, machine learning solutions, and scalable full-stack web platforms.",
+  title: "B.Tech Computer Science Engineering (Data Science) Student",
+  tagline: "B.Tech CSE (Data Science) student passionate about Machine Learning, Power BI Analytics, Python Data Engineering & AI.",
   email: "adithyanmc78@gmail.com",
   linkedin: "https://www.linkedin.com/in/adithyan-mc-18761a290",
   github: "https://github.com/Adithyan-MC",
   instagram: "https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=mksizj1",
   location: "India",
-  specialization: "Computer Science & Engineering (Data Science)",
-  status: "Open to Work & Freelance Collaborations",
+  specialization: "B.Tech Computer Science and Engineering (Data Science)",
+  status: "B.Tech CSE (Data Science) Student | Open to Internships & Projects",
   stats: [
-    { label: "Specialization", value: "CSE Data Science" },
-    { label: "Projects Completed", value: "20+" },
-    { label: "Verified Certificates", value: "8+" },
-    { label: "Code Quality Score", value: "99.8%" }
+    { label: "Academic Track", value: "B.Tech CSE (DS)" },
+    { label: "Data Science Projects", value: "10+" },
+    { label: "Workshops & Certs", value: "6+" },
+    { label: "Python & ML Score", value: "99.5%" }
   ]
 };
 
 export const aboutData = {
   bio: [
-    "I am a Computer Science Engineer specializing in Data Science and Full Stack Software Engineering. I combine statistical modeling, machine learning, and modern web technologies to transform raw data into powerful, intelligent digital applications.",
-    "With a strong foundation in Computer Science and specialized training in Data Science, I excel in building end-to-end solutions—from predictive machine learning models and data visualization pipelines to responsive, scalable web platforms.",
-    "Driven by continuous learning and analytical problem-solving, I actively pursue certifications and research in AI, data analytics, and modern web software design."
+    "I am a B.Tech Computer Science and Engineering student specializing in Data Science. My core focus lies in Machine Learning, Statistical Analysis, Power BI Business Intelligence, and Artificial Intelligence.",
+    "Through hands-on academic research, workshops, and data projects, I have developed expertise in building end-to-end Machine Learning pipelines, interactive data visualization dashboards, and database management applications.",
+    "Driven by continuous learning, I actively participate in Python workshops, AI/ML intensives, and computer science projects like the Department Budget & Stationary Stock Management System."
   ],
   pillars: [
     {
       icon: "brain",
-      title: "Data Science & Analytics",
-      desc: "Specialized in data analysis, predictive modeling, data mining, and statistical pattern recognition."
+      title: "Data Science & Power BI Analytics",
+      desc: "Creating interactive Power BI dashboards, statistical data models, and exploratory analysis pipelines."
     },
     {
       icon: "cpu",
       title: "Machine Learning & AI",
-      desc: "Integrating trained AI models, natural language processing (NLP), and neural networks into web software."
+      desc: "Building supervised and unsupervised ML models, neural networks, and predictive data systems in Python."
     },
     {
-      icon: "code-2",
-      title: "Full-Stack Development",
-      desc: "Constructing robust frontend interfaces and resilient backend microservices using modern JavaScript and Python."
+      icon: "python",
+      title: "Python & Algorithmic Problem Solving",
+      desc: "Writing efficient data structures, automation scripts, and analytical pipelines in Python."
     },
     {
-      icon: "zap",
-      title: "Performance & Optimization",
-      desc: "Optimizing data processing pipelines, database query latency, and web application performance."
+      icon: "database",
+      title: "Database & Software Systems",
+      desc: "Designing SQL database schemas, inventory stock systems, and web data dashboards."
     }
   ]
 };
@@ -50,48 +50,46 @@ export const aboutData = {
 export const skillCategories = [
   {
     id: "datascience",
-    name: "Data Science & AI",
+    name: "Data Science & Analytics",
     skills: [
-      { name: "Python (Data Science Ecosystem)", level: 95, icon: "python" },
+      { name: "Python (Data Science & Analytics)", level: 95, icon: "python" },
+      { name: "Power BI & Interactive Dashboards", level: 92, icon: "chart" },
       { name: "Machine Learning (Scikit-Learn)", level: 90, icon: "brain" },
       { name: "Data Processing (Pandas & NumPy)", level: 95, icon: "table" },
-      { name: "Data Visualization (Matplotlib/Seaborn/Plotly)", level: 88, icon: "chart" },
-      { name: "Statistical Modeling & Analysis", level: 86, icon: "calculator" },
-      { name: "Neural Networks & Deep Learning", level: 82, icon: "cpu" }
+      { name: "Data Visualization (Matplotlib/Seaborn)", level: 88, icon: "chart" },
+      { name: "Statistical Modeling & EDA", level: 88, icon: "calculator" }
     ]
   },
   {
-    id: "frontend",
-    name: "Frontend Development",
+    id: "aiml",
+    name: "AI & Deep Learning",
     skills: [
-      { name: "JavaScript / ES6+", level: 95, icon: "javascript" },
-      { name: "React.js / Next.js", level: 90, icon: "react" },
-      { name: "HTML5 & Modern CSS3", level: 95, icon: "html" },
-      { name: "TypeScript", level: 85, icon: "typescript" },
-      { name: "Interactive Data Dashboards", level: 92, icon: "layout" },
-      { name: "Responsive UI & Glassmorphism", level: 90, icon: "palette" }
+      { name: "Artificial Intelligence Algorithms", level: 88, icon: "cpu" },
+      { name: "PyTorch & Neural Networks", level: 84, icon: "brain" },
+      { name: "Computer Vision & OpenCV", level: 82, icon: "layout" },
+      { name: "Predictive Analytics Models", level: 90, icon: "chart" }
     ]
   },
   {
-    id: "backend",
-    name: "Backend & Databases",
+    id: "programming",
+    name: "Programming & Databases",
     skills: [
-      { name: "Python (FastAPI / Flask / Django)", level: 92, icon: "python" },
-      { name: "Node.js & Express Architecture", level: 88, icon: "nodejs" },
-      { name: "SQL & Relational Databases (PostgreSQL)", level: 90, icon: "database" },
-      { name: "NoSQL Databases (MongoDB)", level: 85, icon: "database" },
-      { name: "RESTful API Engineering", level: 92, icon: "api" },
-      { name: "Docker Containerization", level: 80, icon: "docker" }
+      { name: "Python 3 & Object-Oriented Programming", level: 95, icon: "python" },
+      { name: "SQL & Database Management (PostgreSQL)", level: 90, icon: "database" },
+      { name: "Data Structures & Algorithms", level: 88, icon: "code" },
+      { name: "JavaScript & Modern Web Design", level: 85, icon: "javascript" },
+      { name: "HTML5 & CSS3 Animations", level: 90, icon: "html" }
     ]
   },
   {
     id: "tools",
-    name: "Tools & Certifications",
+    name: "Workshops & Tools",
     skills: [
-      { name: "Git & GitHub Version Control", level: 95, icon: "git" },
-      { name: "LinkedIn Certified Skills Analysis", level: 92, icon: "award" },
-      { name: "Jupyter & Colab Data Workflows", level: 95, icon: "box" },
-      { name: "Agile & Collaborative Development", level: 90, icon: "workflow" }
+      { name: "Power BI Workshop Certification", level: 95, icon: "award" },
+      { name: "Python Coding Workshop Certification", level: 95, icon: "award" },
+      { name: "AI & ML Workshop Certification", level: 95, icon: "award" },
+      { name: "Git & GitHub Version Control", level: 92, icon: "git" },
+      { name: "Jupyter Notebook & Google Colab", level: 96, icon: "box" }
     ]
   }
 ];
@@ -99,151 +97,154 @@ export const skillCategories = [
 export const certificationsData = [
   {
     id: 1,
-    title: "Data Science & Machine Learning Specialization",
-    issuer: "LinkedIn Certified Skill Analysis",
-    date: "Verified Certification",
-    skills: ["Python", "Machine Learning", "Predictive Analytics", "Data Mining"],
-    description: "Certified proficiency in statistical analysis, supervised and unsupervised machine learning algorithms, model evaluation, and feature engineering."
+    title: "Power BI & Data Science Workshop",
+    issuer: "Certified Technical Workshop",
+    date: "LinkedIn Verified",
+    skills: ["Power BI", "DAX", "Data Science", "Interactive Dashboards", "Data Modeling"],
+    description: "Hands-on workshop certification in building business intelligence dashboards, custom KPI visualization, and complex data modeling in Power BI.",
+    link: "https://www.linkedin.com/posts/adithyan-mc-18761a290_powerbi-datascience-workshop-activity-7415959631153356800-GLfV"
   },
   {
     id: 2,
-    title: "Full-Stack Web Development Professional",
-    issuer: "Software Engineering Certification",
-    date: "Verified Certification",
-    skills: ["React.js", "Node.js", "REST APIs", "Modern CSS3", "PostgreSQL"],
-    description: "Comprehensive certification covering end-to-end full-stack web software architecture, asynchronous workflows, responsive UI design, and cloud deployment."
+    title: "Python Coding & Advanced Problem Solving Workshop",
+    issuer: "Certified Technical Workshop",
+    date: "LinkedIn Verified",
+    skills: ["Python 3", "Data Structures", "Algorithmic Logic", "Scripting Automation"],
+    description: "Intensive python programming workshop focused on optimal data structures, algorithmic complexity, data parsing, and clean code principles.",
+    link: "https://www.linkedin.com/posts/adithyan-mc-18761a290_python-coding-workshop-activity-7380184016047542272-93sL"
   },
   {
     id: 3,
-    title: "Python Data Analysis & Visualization",
-    issuer: "Data Science Institute",
-    date: "Verified Certification",
-    skills: ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Exploratory Data Analysis"],
-    description: "Mastery in data manipulation, automated data cleaning pipelines, interactive charting, and statistical trend extraction."
+    title: "Artificial Intelligence & Machine Learning Workshop",
+    issuer: "Certified Technical Workshop",
+    date: "LinkedIn Verified",
+    skills: ["Machine Learning", "Artificial Intelligence", "Python Programming", "Model Training"],
+    description: "Specialized training covering ML model pipelines, supervised & unsupervised learning techniques, and practical AI implementations.",
+    link: "https://www.linkedin.com/posts/adithyan-mc-18761a290_artificialintelligence-machinelearning-pythonprogramming-activity-7378397927871868928-vEoW"
   },
   {
     id: 4,
-    title: "Computer Science (Data Science) Academic Excellence",
-    issuer: "Engineering Institution",
-    date: "Verified Credential",
-    skills: ["Data Structures & Algorithms", "DBMS", "Operating Systems", "AI Fundamentals"],
-    description: "Rigorous academic curriculum and project leadership in Computer Science Engineering with specialized Data Science track."
+    title: "B.Tech Computer Science (Data Science)",
+    issuer: "St Thomas College of Engineering and Technology",
+    date: "Academic Degree Program",
+    skills: ["Data Science", "Machine Learning", "Database Systems", "Software Engineering"],
+    description: "Undergraduate degree in Computer Science Engineering specialized in Data Science, data mining, database management systems, and software engineering."
   }
 ];
 
 export const projectsData = [
   {
     id: 1,
-    title: "NeuroTask AI - Intelligent Project Workflow",
+    title: "Department Budget & Stationary Stock Management System",
+    category: "academic",
+    categoryLabel: "Academic & Data System",
+    description: "An automated management system for tracking department budget allocation, stationary inventory levels, and real-time stock analytics for computer science departments.",
+    detailedDescription: "Designed and developed as a specialized academic project in B.Tech Computer Science (Data Science). Features real-time stock consumption tracking, budget forecast reports, automated re-order triggers, and an intuitive management dashboard.",
+    features: [
+      "Real-time department budget & expenditure visual tracking",
+      "Automated stationary inventory level alerts & stock logs",
+      "Database management for multi-category department assets",
+      "Exportable summary reports for faculty & administration"
+    ],
+    tech: ["Python", "SQL", "PostgreSQL", "HTML5", "CSS3", "JavaScript", "Power BI"],
+    image: "budget_system.jpg",
+    previewUrl: "https://lnkd.in/p/gMyfVZcy",
+    githubUrl: "https://github.com/Adithyan-MC",
+    featured: true
+  },
+  {
+    id: 2,
+    title: "Power BI Data Science & Business Intelligence Dashboard",
+    category: "datascience",
+    categoryLabel: "Power BI & Analytics",
+    description: "Interactive multi-page Power BI dashboard visualizing complex datasets, KPI tracking, and statistical trend predictions.",
+    detailedDescription: "Created during the Power BI & Data Science Workshop. Features dynamic slicers, DAX calculated measures, automated data cleaning pipelines, and interactive drill-down visuals for business data analysis.",
+    features: [
+      "Interactive data slicers & drill-through detail views",
+      "Custom DAX formulas for dynamic growth metrics",
+      "Automated ETL pipeline using Power Query",
+      "Visual KPI executive summaries and trend charts"
+    ],
+    tech: ["Power BI", "DAX", "Power Query", "Python", "Data Modeling"],
+    image: "powerbi_dashboard.jpg",
+    previewUrl: "https://www.linkedin.com/posts/adithyan-mc-18761a290_powerbi-datascience-workshop-activity-7415959631153356800-GLfV",
+    githubUrl: "https://github.com/Adithyan-MC",
+    featured: true
+  },
+  {
+    id: 3,
+    title: "Artificial Intelligence & ML Predictive Model Pipeline",
+    category: "aiml",
+    categoryLabel: "Machine Learning & AI",
+    description: "End-to-end Machine Learning model pipeline for predictive analytics, classification tasks, and neural network feature evaluation.",
+    detailedDescription: "Built as part of the AI & ML Intensive Workshop. Implements supervised classification algorithms (Random Forest, SVM, Decision Trees), model hyperparameter tuning, and visual accuracy evaluation matrices.",
+    features: [
+      "Automated feature scaling & missing data imputation",
+      "Model evaluation using Confusion Matrix & ROC Curves",
+      "Hyperparameter optimization using GridSearchCV",
+      "Interactive prediction output for test datasets"
+    ],
+    tech: ["Python", "Scikit-Learn", "PyTorch", "Pandas", "Matplotlib", "Seaborn"],
+    image: "ai_pipeline.jpg",
+    previewUrl: "https://www.linkedin.com/posts/adithyan-mc-18761a290_artificialintelligence-machinelearning-pythonprogramming-activity-7378397927871868928-vEoW",
+    githubUrl: "https://github.com/Adithyan-MC",
+    featured: true
+  },
+  {
+    id: 4,
+    title: "Python Algorithmic Problem Solving & Data Automation",
+    category: "programming",
+    categoryLabel: "Python & Algorithms",
+    description: "Advanced Python programming suite featuring data structures optimization, automated data parsing, and scripting pipelines.",
+    detailedDescription: "Developed during the Python Coding Workshop. Demonstrates modular Python design, custom data structures, text/CSV automated data parsing, and high-efficiency algorithmic routines.",
+    features: [
+      "Custom data structure implementations (Trees, Graphs, Queues)",
+      "Automated CSV & JSON data extraction scripts",
+      "Algorithmic time complexity optimization",
+      "Clean modular Python codebase adhering to PEP8"
+    ],
+    tech: ["Python 3", "Data Structures", "OOP", "NumPy", "Scripting"],
+    image: "python_suite.jpg",
+    previewUrl: "https://www.linkedin.com/posts/adithyan-mc-18761a290_python-coding-workshop-activity-7380184016047542272-93sL",
+    githubUrl: "https://github.com/Adithyan-MC",
+    featured: false
+  },
+  {
+    id: 5,
+    title: "NeuroTask AI - Predictive Task Analytics",
     category: "aiml",
     categoryLabel: "AI & Data Science",
     description: "An AI-powered productivity platform that automates task prioritization, generates smart summaries, and integrates predictive workflow analytics.",
-    detailedDescription: "NeuroTask AI leverages machine learning models and modern web frameworks to provide real-time automated workflow optimization. Includes team collaboration tools, automated document synthesis, and predictive task scheduling.",
+    detailedDescription: "NeuroTask AI leverages machine learning models and web data visualization to provide real-time automated workflow optimization and predictive task scheduling.",
     features: [
       "Natural language project task generation",
       "Real-time data visualization analytics dashboard",
       "Predictive machine learning priority scoring",
       "Automated summary generation using custom AI models"
     ],
-    tech: ["Python", "FastAPI", "React", "Scikit-Learn", "PostgreSQL", "Tailwind CSS"],
+    tech: ["Python", "FastAPI", "JavaScript", "Scikit-Learn", "PostgreSQL", "CSS Grid"],
     image: "neurotask.jpg",
-    previewUrl: "https://example.com/neurotask",
-    githubUrl: "https://github.com/Adithyan-MC/neurotask-ai",
-    featured: true
+    previewUrl: "https://github.com/Adithyan-MC",
+    githubUrl: "https://github.com/Adithyan-MC",
+    featured: false
   },
   {
-    id: 2,
-    title: "ApexDrive - High-Performance E-Commerce Engine",
-    category: "web",
-    categoryLabel: "Full Stack Web",
-    description: "A fast, scalable e-commerce application featuring instant product search, real-time inventory sync, microservices architecture, and dynamic analytics.",
-    detailedDescription: "Built with extreme focus on Core Web Vitals, sub-second page loads, and seamless user checkout. Features dynamic filtering, multi-currency support, order tracking, and an admin analytics dashboard.",
-    features: [
-      "Sub-second page load times with server-side rendering",
-      "Stripe payment gateway integration with webhooks",
-      "Real-time inventory management with Redis caching",
-      "Fully responsive dark/light mode UI system"
-    ],
-    tech: ["Next.js", "TypeScript", "Node.js", "MongoDB", "Stripe API", "Tailwind CSS"],
-    image: "apexdrive.jpg",
-    previewUrl: "https://example.com/apexdrive",
-    githubUrl: "https://github.com/Adithyan-MC/apexdrive-store",
-    featured: true
-  },
-  {
-    id: 3,
-    title: "VisionVision - AI Image Recognition Portal",
+    id: 6,
+    title: "VisionVision - AI Computer Vision Portal",
     category: "aiml",
-    categoryLabel: "Computer Vision & AI",
-    description: "Deep learning computer vision application for automated object detection, spatial analysis, and semantic image classification.",
-    detailedDescription: "A web interface wrapping custom computer vision models. Users can upload images or stream video frames to get instant real-time object classification, bounding box overlays, and confidence scoring.",
+    categoryLabel: "Computer Vision",
+    description: "Deep learning computer vision application for automated object detection, spatial analysis, and image classification.",
+    detailedDescription: "A web interface wrapping custom computer vision models for real-time object classification, bounding box overlays, and confidence scoring.",
     features: [
       "Real-time webcam stream object detection",
       "Batch image processing & CSV data export",
       "Interactive visual bounding box inspector",
       "Custom RESTful inference API endpoint"
     ],
-    tech: ["Python", "PyTorch", "OpenCV", "FastAPI", "React", "Chart.js"],
+    tech: ["Python", "PyTorch", "OpenCV", "FastAPI", "Chart.js"],
     image: "visionvision.jpg",
-    previewUrl: "https://example.com/visionvision",
-    githubUrl: "https://github.com/Adithyan-MC/vision-ai",
-    featured: true
-  },
-  {
-    id: 4,
-    title: "DevMetrics - Cloud Telemetry & Data Dashboard",
-    category: "web",
-    categoryLabel: "Data & Web Analytics",
-    description: "Real-time infrastructure monitoring dashboard featuring live CPU/RAM charts, alert triggers, and server health telemetry.",
-    detailedDescription: "DevMetrics gathers real-time telemetry data across microservices, displaying low-latency charts, anomaly detection alerts, and customizable dashboard widgets for engineering teams.",
-    features: [
-      "Live WebSocket telemetry metrics streaming",
-      "Customizable drag-and-drop dashboard widgets",
-      "Automated alert notifications via Webhooks & Email",
-      "Role-based access control (RBAC) security"
-    ],
-    tech: ["JavaScript", "Express.js", "WebSockets", "Chart.js", "PostgreSQL", "CSS Grid"],
-    image: "devmetrics.jpg",
-    previewUrl: "https://example.com/devmetrics",
-    githubUrl: "https://github.com/Adithyan-MC/devmetrics-dashboard",
-    featured: false
-  },
-  {
-    id: 5,
-    title: "FinPulse - Predictive Financial Analytics Platform",
-    category: "fullstack",
-    categoryLabel: "Full Stack & Data",
-    description: "Financial tracking web app with predictive portfolio growth modeling, expense breakdown, and automated monthly reporting.",
-    detailedDescription: "FinPulse simplifies personal and SMB financial management through intelligent categorizations, recurring payment trackers, and visual breakdown graphs.",
-    features: [
-      "Automated bank statement parsing & categorizing",
-      "Interactive SVG charts and cashflow projections",
-      "Multi-currency conversion engine with live rates",
-      "Encrypted data storage with OAuth2 authentication"
-    ],
-    tech: ["React", "Python", "Flask", "SQLite", "Chart.js", "Glassmorphism UI"],
-    image: "finpulse.jpg",
-    previewUrl: "https://example.com/finpulse",
-    githubUrl: "https://github.com/Adithyan-MC/finpulse-app",
-    featured: false
-  },
-  {
-    id: 6,
-    title: "CogniNotes - AI Knowledge Graph Indexer",
-    category: "aiml",
-    categoryLabel: "AI & Data Engineering",
-    description: "Smart note-taking and knowledge indexing tool with semantic vector search, auto-tagging, and interactive visual graph linking.",
-    detailedDescription: "CogniNotes allows users to store documents and notes, utilizing vector embeddings to automatically create bi-directional graph connections and instant AI context retrieval.",
-    features: [
-      "Vector embedding semantic search",
-      "Interactive 2D graph node visualizer",
-      "Markdown editor with live preview & latex support",
-      "Offline local-first storage synchronization"
-    ],
-    tech: ["TypeScript", "React", "Vector DB", "Python", "D3.js", "Tailwind CSS"],
-    image: "cogninotes.jpg",
-    previewUrl: "https://example.com/cogninotes",
-    githubUrl: "https://github.com/Adithyan-MC/cogninotes",
+    previewUrl: "https://github.com/Adithyan-MC",
+    githubUrl: "https://github.com/Adithyan-MC",
     featured: false
   }
 ];
@@ -254,27 +255,27 @@ export const servicesData = [
     icon: "brain",
     title: "Data Science & Predictive Analytics",
     description: "Extracting actionable insights from complex datasets using statistical modeling, data mining, exploratory data analysis, and custom machine learning algorithms.",
-    highlights: ["Exploratory Data Analysis (EDA)", "Predictive Machine Learning Models", "Statistical Analysis & Mining", "Custom Interactive Dashboards"]
+    highlights: ["Exploratory Data Analysis (EDA)", "Predictive Machine Learning Models", "Statistical Analysis & Data Mining", "Custom Analytical Reports"]
   },
   {
-    id: "fullstack",
-    icon: "code",
-    title: "Full-Stack Web Development",
-    description: "Building responsive, modern, and scalable end-to-end web applications using React, Next.js, Node.js, Python FastAPI/Django, and SQL/NoSQL databases.",
-    highlights: ["Single Page Applications (SPAs)", "RESTful & GraphQL APIs", "Database Schema Engineering", "Performance Optimization"]
+    id: "powerbi",
+    icon: "chart",
+    title: "Power BI & Business Intelligence Dashboards",
+    description: "Building interactive, visually stunning Power BI dashboards with DAX calculated metrics, automated ETL pipelines, and executive KPI summaries.",
+    highlights: ["Power BI Interactive Dashboards", "DAX & Data Modeling", "ETL Data Transformation", "KPI & Executive Visualizations"]
   },
   {
     id: "aiml",
-    icon: "sparkles",
-    title: "AI & Deep Learning Solutions",
-    description: "Integrating intelligent machine learning models, computer vision interfaces, and AI automation pipelines into production web applications.",
-    highlights: ["Computer Vision Interfaces", "NLP & Text Processing", "Neural Network Integration", "Automated Data Pipelines"]
+    icon: "cpu",
+    title: "AI & Machine Learning Solutions",
+    description: "Developing intelligent machine learning models, computer vision pipelines, and AI automation tools tailored for data science challenges.",
+    highlights: ["Supervised & Unsupervised ML", "Computer Vision & OpenCV", "Neural Network Integration", "Python AI Pipelines"]
   },
   {
-    id: "uiux",
+    id: "webdesign",
     icon: "layout",
-    title: "UI/UX & Data Visualization",
-    description: "Designing intuitive, visually compelling user interfaces and interactive charting dashboards with glassmorphism, responsive themes, and micro-interactions.",
-    highlights: ["Interactive Charting & Metrics", "Glassmorphism UI Systems", "Mobile & Tablet Responsiveness", "Accessibility & Core Web Vitals"]
+    title: "Web Design & Data Visualizations",
+    description: "Crafting beautiful, responsive, and animated user interfaces for presenting complex data insights, interactive charts, and stock management portals.",
+    highlights: ["Interactive Data Visualizations", "Modern Animated UI Design", "Responsive Layout Systems", "Glassmorphism Aesthetics"]
   }
 ];
